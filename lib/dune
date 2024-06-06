@@ -1,0 +1,3 @@
+(library
+ (libraries dream dream-html dream-htmx tyxml)
+ (name app))
