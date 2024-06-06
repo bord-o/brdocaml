@@ -14,7 +14,7 @@ let post_card title image name order =
   let delay = sf "%ims" (order * 100) in
   article
     [
-      class_ "animate__animated animate__fadInLeft";
+      class_ "animate__animated animate__fadeInLeft";
       style_ "display: flex; align-items: center; animation-delay: %s;" delay;
       Hx.boost true;
     ]
