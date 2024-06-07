@@ -32,13 +32,13 @@ let post_card title image name order =
 let posts =
   [
     post_card "Building a Lambda Calculus Interpreter with .NET Interop"
-      "/posts/dotnet square.jpg" "dotnet_interp" 1;
+      "/posts/images/dotnet_square.jpg" "dotnet_interp" 1;
     post_card "A RISCV Implementation of the Tiger Compiler"
-      "/posts/tigerhead.jpg" "tiger_compiler" 2;
+      "/posts/images/tigerhead.jpg" "tiger_compiler" 2;
     post_card "Modern Languages to Carry the Flame of Standard ML"
-      "/posts/poly.jpg" "modern_sml" 3;
+      "/posts/images/poly.jpg" "modern_sml" 3;
     post_card "Text Prediction Using Gzip and K-Nearest Neighbors"
-      "/posts/knn.png" "gzip_knn" 4;
+      "/posts/images/knn.png" "gzip_knn" 4;
   ]
 
 let links =
