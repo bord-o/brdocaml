@@ -17,8 +17,9 @@ let find_posts req =
   let post = posts |> List.find (fun p -> p.name = name ^ ".html") in
   Template.layout [ Dream_html.txt ~raw:true "%s" post.html ]
 
-let run interface port =
-  Dream.run ~interface ~port @@ Dream.logger
+let run interface port certificate_file key_file =
+  Dream.run ~tls:true ~interface ~port ~certificate_file ~key_file
+  @@ Dream.logger
   @@ Dream.router
        [
          Dream.get "/" (fun _ -> Template.layout Template.home_content);
